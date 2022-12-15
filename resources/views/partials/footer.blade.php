@@ -1,3 +1,5 @@
+ 
+ @include('partials/footerBanner')
  <footer>
     <div class="footer-container">
       <div class="footer-links">
@@ -98,46 +100,6 @@
       </div>
       <div class="footer-logo"></div>
     </div>
-    <div class="footer-banner">
-     <div class="footer-banner-container">
-        <button>SIGN-UP NOW!</button>
-        <ul>
-            <li>FOLLOW US</li>
-        <li >
-            <div>
-                <a href="">
-                    <img src=" {{ Vite::asset('resources/images/footer-facebook.png') }}" alt="" srcset="">
-                </a>
-            </div>
-        </li>
-        <li >
-            <div>
-                <a href="">
-                    <img src=" {{ Vite::asset('resources/images/footer-periscope.png') }}" alt="" srcset="">
-                </a>
-            </div>
-        </li>
-        <li >
-            <div>
-                <a href="">
-                    <img src=" {{ Vite::asset('resources/images/footer-pinterest.png') }}" alt="" srcset="">
-                </a>
-            </div>
-        </li>
-        <li >
-            <div>
-                <a href="">
-                    <img src=" {{ Vite::asset('resources/images/footer-twitter.png') }}" alt="" srcset="">
-                </a>
-            </div>
-        </li>
-        <li >
-            <div>
-                <a href="">
-                    <img src=" {{ Vite::asset('resources/images/footer-youtube.png') }}" alt="" srcset="">
-                </a>
-            </div>
-        </li>
-        </ul>
-    </div>    
+    
 </footer>
+@include('partials/socialBanner')
