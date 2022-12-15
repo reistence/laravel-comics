@@ -68,19 +68,19 @@
 }
 
 @media screen and (max-width: 780px) {
-    .card {
+    .comic-card {
         width: calc(100% / 4 - 1em);
     }
 }
 
 @media screen and (max-width: 660px) {
-    .card {
+    .comic-card {
         width: calc(100% / 3 - 1em);
     }
 }
 
 @media screen and (max-width: 480px) {
-    .card {
+    .comic-card {
         width: calc(100% / 2 - 1em);
     }
 }

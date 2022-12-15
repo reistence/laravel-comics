@@ -8,7 +8,9 @@
     <div class="container">
         <div>
             <div class="logo">
-                <img src="{{Vite::asset('resources/images/dc-logo.png')}}" alt="" srcset="">
+                <a href="/">
+                    <img src="{{Vite::asset('resources/images/dc-logo.png')}}" alt="" srcset="">
+                </a>
             </div>
             <div class="menu">
                 <ul>
@@ -16,7 +18,7 @@
                         <a href="">CHARACTERS</a>
                     </li>
                     <li>
-                        <a href="">COMICS</a>
+                        <a href="/comics">COMICS</a>
                     </li>
                     <li>
                         <a href="">MOVIES</a>
