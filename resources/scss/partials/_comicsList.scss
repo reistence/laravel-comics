@@ -1,0 +1,87 @@
+.comics-list {
+    background-color: #1c1c1c;
+    height: fit-content;
+
+    .comics-list-container {
+        @include my-container;
+        height: 100%;
+        padding: 2em 0;
+        position: relative;
+        .section-label {
+            position: absolute;
+            top: -10px;
+            left: 0;
+            padding: 0.5em 1em;
+            background-color: $blue;
+            color: white;
+            font-weight: bold;
+        }
+        .wrapper {
+            @include my-flex(column, space-between);
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+            padding: 2em 0;
+            gap: 1em;
+            margin: 0 auto;
+        }
+    }
+}
+
+.comic-item {
+    width: 100%;
+    padding: 0.5em;
+    border-bottom: 3px solid $blue;
+    @include my-flex(row, flex-start);
+    gap: 0.5em;
+    transition: 300ms;
+
+    &:hover {
+        transform: scale(1.01);
+    }
+
+    .item-img {
+        width: 40vmin;
+
+        img {
+            object-fit: cover;
+        }
+    }
+    .item-txt {
+        width: 70%;
+        h3 {
+            color: white;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+        p {
+            color: white;
+            margin-bottom: 0.5em;
+            .comic-info {
+                color: $blue;
+            }
+        }
+
+        p:last-child {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+// @media screen and (max-width: 780px) {
+//     .comic-card {
+//         width: calc(100% / 4 - 1em);
+//     }
+// }
+
+// @media screen and (max-width: 660px) {
+//     .comic-card {
+//         width: calc(100% / 3 - 1em);
+//     }
+// }
+
+// @media screen and (max-width: 480px) {
+//     .comic-card {
+//         width: calc(100% / 2 - 1em);
+//     }
+// }
